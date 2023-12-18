@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udvalg af alkoholfrie øl</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="mobile-nav.js" defer></script>
+</head>
+
+<body>
+
+<!--Header-->
+
+    <header>
+        <div class="topnav" id="myTopnav">
+            <div>
+                <a href="index.html"><img src="img/trojborgbryg.png" alt="logo"></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Alkoholfri øl
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ombygning.html">Nyheder</a>
+                    <a href="produkter.html">Vores udvalg</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Inspiration
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ombygning.html">Anledninger</a>
+                    <a href="opskrift.html">Opskrifter</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Arrangementer
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ombygning.html">Løbeklub</a>
+                    <a href="ombygning.html">Ølsmagning</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Om os
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ombygning.html">Historie</a>
+                    <a href="forhandlere.html">Forhandlere</a>
+                    <a href="ombygning.html">Kontakt</a>
+                </div>
+            </div>
+
+            <a href="javascript:void(0);" style="font-size:35px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </header>
+
+<!--Main - Produktudvalg-->
+    <main> 
+        <div class="baggrund_farve">
+            
+            <h1 class="overskrift_produkter">Sortiment</h1>
+    
+            <div class="streg">
+            </div>
+            <h2 class="kategori_ol">Velkendte</h2>
+            <div class="streg">
+            </div>
+
+            <div class="produkter_udvalg">
+                <div class="produkter">
+                    <h3>Niels Juels</h3>
+                    <img class="produkter_velkendte" src="img/gulol.png" alt="gul øl">
+                    <div class="button_produkter">
+                        <a href="beskrivelsegul.html" class="produkter_button">Læs mere</a>
+                    </div>
+                </div>
+                <div class="produkter">
+                    <h3>Tordenskjold</h3>
+                    <img class="produkter_velkendte" src="img/blaaol.png" alt="blå øl">
+                    <div class="button_produkter">
+                        <a href="beskrivelselys.html" class="produkter_button">Læs mere</a>
+                    </div>
+                </div>
+                <div class="produkter">
+                    <h3>Cort Adeler</h3>
+                    <img class="produkter_velkendte" src="img/gronol.png" alt="grøn øl">
+                    <div class="button_produkter">
+                    <a href="beskrivelsegron.html" class="produkter_button">Læs mere</a>
+                    </div>
+                </div>
+            </div>
+
+        <div class="streg">
+        </div>
+        <h2 class="kategori_ol">Anderledes</h2>
+        <div class="streg"></div>
+
+        <div class="produkter_udvalg">
+            <div class="produkter">
+                <h3>Otte Ruds</h3>
+                <img class="produkter_velkendte" src="img/graaol.png" alt="Grå øl">
+                <div class="button_produkter">
+                <a href="beskrivelsegraa.html" class="produkter_button">Læs mere</a>
+                </div>
+            </div>
+            <div class="produkter">
+                <h3>Ivar huitfeldt</h3>
+                <img class="produkter_velkendte" src="img/rodol.png" alt="Rød øl">
+                <div class="button_produkter">
+                <a href="beskrivelseRod.html" class="produkter_button">Læs mere</a>
+                </div>
+            </div>
+            <div class="produkter">
+                <h3>Willemoes</h3>
+                <img class="produkter_velkendte" src="img/morkblaaol.png" alt="Mørk blå øl">
+                <div class="button_produkter">
+                <a href="beskrivelseblaa.html" class="produkter_button">Læs mere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Nyhedsbrev-->
+
+        <form class="baggrund_nyhed" action="/action_page.php">
+            <div class="nyhedsbrev">
+            <h2>Nyhedsbrev</h2>
+            <p>Få de nyeste smagsoplevelser</p>
+            <input type="text" placeholder="Email address" name="mail" required>
+            <input type="submit" value="Tilmeld">
+            </div>
+        </form>
+
+    </main>
+
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="flexbox_footer">
+            <img class="logo_footer" src="img/trojborgbryg.png" alt="logo">
+
+            <div class="tekst_footer">
+                <a class="footer_link" href="#" target="_blank">TrøjborgBryg</a><br>
+                <a class="footer_link" href="https://www.google.com/maps/place/Tordenskjoldsgade+12,+8200+Aarhus/@56.1697259,10.2135178,17z/data=!3m1!4b1!4m6!3m5!1s0x464c3fbb0785b98f:0x820f1740a78024c9!8m2!3d56.1697259!4d10.2160927!16s%2Fg%2F11c5kqdrcd?entry=ttu" target="_blank">Tordenskjoldsgade 12</a><br>
+                <a class="footer_link" href="https://www.google.com/maps/place/Tordenskjoldsgade+12,+8200+Aarhus/@56.1697259,10.2135178,17z/data=!3m1!4b1!4m6!3m5!1s0x464c3fbb0785b98f:0x820f1740a78024c9!8m2!3d56.1697259!4d10.2160927!16s%2Fg%2F11c5kqdrcd?entry=ttu" target="_blank">Aarhus N</a><br>
+                <a class="footer_link" href="tel:+30488838"> +45 30 48 88 38</a><br>
+                <a class="footer_link" href="mailto:info@trøjborgbryg.dk">info@trøjborgbryg.dk</a>
+            </div>
+
+            <div>
+                <a href="#"><img id="socialemedier" src="img/socialmedier.png" alt="Instagram og facebook"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

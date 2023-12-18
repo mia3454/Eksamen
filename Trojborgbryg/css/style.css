@@ -1,0 +1,1117 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Reset stopper her */
+  
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    background-color: white;
+    color: black;
+}
+
+p {
+    font-weight: 300;
+    font-size: 0.75em;
+    line-height: 1.5;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+h1,
+h2{
+    font-weight: 200;
+}
+
+h3 {
+    text-align: center;
+    color: #86a880;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+#backButton {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    padding: 10px;
+    background-color: #86a880;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+/*------------*/
+/*-- Header --*/
+/*------------*/
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #86a880;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.topnav img {
+    width: 120px;
+    display: block;
+    padding-right: 1rem;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float:left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*------------*/
+/*-- Footer --*/
+/*------------*/
+
+footer{
+    background-color: #86a880;
+}
+
+.logo_footer {
+    width: 90px;
+    height: auto;
+    margin: 20px;
+}
+
+.flexbox_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_link {
+    font-size: 14px;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#socialemedier {
+    height: 40%;
+    width: auto;
+    margin: 10px;
+}
+
+/*-------------*/
+/*-- Forside --*/
+/*-------------*/
+
+.forside_storbillede {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 5%;
+  }
+
+.forside_overskrift {
+    text-align: center;
+    font-size: 17px;
+}
+/*---- forside velkommen tekst + button -----*/
+
+.forside_velkommen {
+    font-size: 13px;
+    text-align: center;
+    padding-top: 2%;
+    margin: 1% 10% 5% 10%;
+    line-height: 2;
+  }
+
+.button_forside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.velkommen_button {
+    padding: 10px 40px;
+    margin-bottom: 5%;
+    font-size: 12px;
+    background-color: #a2dcad;
+    color: white;
+    border: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.velkommen_button:hover {
+    background-color:#86a880;
+}
+
+/*-- Forside naturikoner --*/
+
+.container_naturikoner {
+    background-color: #c9decd;
+    padding: 10px;
+    margin-bottom: 5%;
+    border: black;
+}
+
+.naturikoner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.billedeogtekst{
+    text-align: center;
+}
+
+.natur_tekst {
+    font-size: 10px;
+}
+
+.billedeogtekst img {
+    width: 40%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/*-- Forside billede collage og tekst --*/
+
+.container_forside_nede {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+      "forside_tekst1"
+      "forside_billede1"
+      "forside_tekst2"
+      "forside_billede2"
+      "forside_tekst3"
+      "forside_billede3";
+  }
+  
+  .forside_tekst1 { grid-area: forside_tekst1; }
+  
+  .forside_billede1 { grid-area: forside_billede1; }
+  
+  .forside_tekst2 { grid-area: forside_tekst2; }
+  
+  .forside_billede2 { grid-area: forside_billede2; }
+  
+  .forside_tekst3 { grid-area: forside_tekst3; }
+  
+  .forside_billede3 { grid-area: forside_billede3; }
+  
+  
+.overskrift_viden  {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: #86a880;
+    font-weight:bolder;
+}
+
+.tekst_viden{
+    font-size: 12px;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    line-height: 2;
+  }
+
+.billeder_container {
+    width: 100%;
+    height: auto;
+}
+  
+/*--------------*/
+/*-- Produkter--*/
+/*--------------*/
+
+.baggrund_farve {
+    background-color: #c9decd;
+}
+
+.overskrift_produkter {
+    font-family: "Obviously";
+    color: #86a880;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 3%;
+}
+
+.kategori_ol {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
+
+/*--Produkter - Velkendte øl--*/
+
+.produkter_velkendte {
+ width: 100%;
+ height: auto;
+}
+
+.produkter_udvalg {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+/*-- Produkter - Billeder --*/
+
+.produkter {
+    position: relative;
+}
+
+/*-- Produkter - Button --*/
+
+.produkter_button {
+    position: absolute;
+    top: 83%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background-color: #a2dcad;
+    color: white;
+    font-size: 16px;
+    padding: 4px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .produkter_button:hover {
+    background-color: #86a880;
+  }
+
+/*-- Produkter - Nyhedsbrev--*/
+
+form {
+    border: 3px solid #dbebdc;
+    text-align: center;
+  }
+  
+  .nyhedsbrev {
+    padding: 20px;
+    background-color: #dbebdc;
+    margin: 20px;
+  }
+
+  .baggrund_nyhed {
+    background-color: #c9decd;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #a2dcad;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+    background-color: #86a880;
+  }
+
+/*---------------------------*/
+/*-- Beskrivelse af produkt--*/
+/*---------------------------*/
+
+/*-- Beskrivelse af produkt - Baggrund --*/
+
+.bg_image {
+    margin: 0; 
+    padding: 0; 
+    background-size: cover; 
+    background-position: center; 
+    height: 190vh;
+    position: relative;
+}
+
+/* Beskrivelse af produkt - Container --*/
+
+.background_container {
+    position: static;
+}
+
+.flex-container_beskrivelse {
+    display:flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c9decd; 
+    border-radius: 40px;
+    margin-top: 50%;
+}
+
+.kolonne_beskrivelse {
+    flex: 1;
+    padding: 20px;
+}
+
+.natur_img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.be_ol_img {
+    max-width: 250px;
+}
+
+.kolonne_beskrivelse button{
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #86a880;
+    color: white;
+    font-size: 14px;
+    padding: 4px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.kolonne_beskrivelse h4 {
+    font-family: Obviously;
+    color: #86a880;
+    font-size: 12px;
+    margin-bottom: 5%;
+    margin-top: 4%;
+}
+
+.kolonne_beskrivelse p {
+    font-size: 11px;
+}
+
+.aroma_anledninger_container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
+}
+
+/*-- Beskrivelse af produkter - Ingredienser--*/
+
+.grid_container_ingredienser {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2% 20%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 150%;
+    left: 30%;
+}
+
+.grid-tekst_ingredienser {
+    background-color: #c9decd;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+    text-align: center;
+}
+
+.ingredienser {
+    font-family: Obviously;
+    color: #86a880;
+    font-size: 18px;
+    margin-top: 4%;
+    position: absolute;
+    top: 144%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*-------------*/
+/*-- Opskrift--*/
+/*-------------*/
+
+.overskrift_opskrift {
+    font-family: Obviously;
+    color: #86a880;
+    text-align: center;
+    font-size: 22px;
+    background-color: #c9decd;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.drinks_navn, .drinks_navn2 {
+    background-color: #86a880;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    margin-top: 5%;
+    padding: 5px;
+    text-align: center;
+}
+
+/*-- Opskrift - Drink 1 --*/
+
+.container_opskrift1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "opskrift_billede1"
+      "opskrift_tekst1";
+      padding: 0px 30px 0px 30px;
+  }
+  
+  .opskrift_billede1 { 
+    border: 1px solid black;
+  }
+  
+  .opskrift_billede1 img {
+    max-width: 100%; 
+    height: auto; 
+  }
+  
+  .opskrift_tekst1 { 
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .opskrift_tekst1 p{
+    line-height: 2;
+    font-size: 11px;
+  }
+
+  /*-- Opskrift - Drink 2 --*/
+
+  .container_opskrift2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "opskrift_billede2"
+      "opskrift_tekst2";
+      padding: 0px 30px 30px 30px;
+      background-color: #c9decd;
+  }
+  
+  .opskrift_billede2 { 
+    border: 1px solid black;
+  }
+  
+  .opskrift_billede2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .opskrift_tekst2 { 
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .opskrift_tekst2 p{
+    line-height: 2;
+    font-size: 11px;
+  }
+
+  .container_opskrift_overskrift {
+    background-color: #c9decd;
+    padding-top: 30px;
+  }
+
+  /*-- Opskrift - konkurrence --*/
+
+  .container_vind {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "vind_billede vind_tekst";
+      padding-right: 10px;
+  }
+
+  .vind_billede img {
+    max-width: 80%;
+    height: auto;
+    margin: 20px 0px 20px 0px
+  }
+  
+  .vind_tekst h2 {
+    font-family: Obviously;
+    color: #86a880;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
+
+  .vind_tekst p {
+    font-size: 12px;
+    line-height: 2;
+  }
+  
+/*----------------*/
+/*-- Forhandlere--*/
+/*----------------*/
+
+ .forhandlere_kort {
+    width: 100%;
+    height: auto;
+ }
+
+ /*-- Forhandlere streg --*/
+
+ .streg {
+    width: 90%; 
+    height: 1px; 
+    background-color: #000; 
+    margin: 0 auto; /* Centrerer stregen ved at bruge automatisk margi */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*-- Forhandlere tekst container --*/
+
+.container_forhandlere {
+    display: flex;
+    flex-direction: column; 
+}
+
+.row {
+    padding: 15px; 
+    box-sizing: border-box; 
+    border: 0px solid #ccc; 
+}
+
+.overskrift_forhandlere {
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    color: #86a880;
+    font-size: 16px;
+}
+
+.tekst_forhandlere {
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+/*--------------*/
+/*-- Ombygning--*/
+/*--------------*/
+
+.ombygning_tekst {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 16px;
+  }
+
+  .ombygning_tekst1 {
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .ombygning_billede {
+    margin-left: 20%;
+    margin-top: 2%;
+    max-width: 60%;
+  }
+  
+.ombygning_link {
+    text-decoration:underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav {
+        display: block;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+/*------------*/
+/*-- footer --*/
+/*------------*/
+
+.logo_footer {
+    width: 140px;
+
+}
+
+.tekst_footer {
+    font-size: 20px;
+}
+
+/*-------------*/
+/*-- Forside --*/
+/*-------------*/
+
+
+.forside_overskrift {
+    font-size: 35px;
+}
+
+/*---- forside velkommen tekst + button -----*/
+
+.forside_velkommen {
+    font-size: 17px;
+    margin: 0% 25% 2% 25%;
+}
+    
+.velkommen_button {
+    padding: 10px 60px;
+    font-size: 17px;
+}
+
+/*-- Forside naturikoner --*/
+
+.container_naturikoner {
+    padding: 20px;
+    margin-bottom: 0%;
+}
+
+.natur_tekst {
+    font-size: 15px;
+}
+
+.billedeogtekst img {
+    width: 50%;
+}
+
+/*-- Forside om bryggeret bokse --*/
+
+.container_forside_nede {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "forside_tekst1 forside_billede2 forside_tekst3"
+      "forside_billede1 forside_tekst2 forside_billede3";
+  }
+  
+  .forside_tekst1 { grid-area: forside_tekst1; }
+  
+  .forside_billede1 { grid-area: forside_billede1; }
+  
+  .forside_billede2 { grid-area: forside_billede2; }
+  
+  .forside_tekst2 { grid-area: forside_tekst2; }
+  
+  .forside_tekst3 { grid-area: forside_tekst3; }
+  
+  .forside_billede3 { grid-area: forside_billede3; }
+  
+
+  .overskrift_viden  {
+    font-size: 24px;
+    padding-top: 40px;
+}
+
+.tekst_viden{
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 30px 15px 30px;
+  }
+  
+
+/*---------------*/
+/*-- Produkter --*/
+/*---------------*/
+
+.overskrift_produkter {
+    padding-top: 3%;
+    font-size: 30px;
+}
+
+.produkter_udvalg {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.kategori_ol {
+    font-size: 24px;
+}
+
+/*-- Produkter - Nyhedsbrev--*/
+  
+  .nyhedsbrev {
+    padding: 30px;
+    background-color: #dbebdc;
+    margin: 30px 150px;
+  }
+
+  .nyhedsbrev p{
+    font-size: 15px;
+    margin: 10px 0pc 10px 0px;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 60%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #a2dcad;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+    background-color: #86a880;
+  }
+
+/*----------------------------*/
+/*-- beskrivelse af produkt --*/
+/*----------------------------*/
+
+/*-- Beskrivelse af produkt - Baggrund --*/
+
+.bg_image {
+    height: 40%;
+}
+
+/* Beskrivelse af produkt - Container --*/
+
+.flex-container_beskrivelse {
+    flex-direction: row;
+    margin-top: 10%;
+    padding: 50px;
+    top: 50%;
+}
+
+.be_ol_img {
+    max-width: 400px;
+}
+.kolonne_beskrivelse button{
+    margin-left: 53%;
+    font-size: 16px;
+    padding: 6px 40px;
+}
+
+.kolonne_beskrivelse h4 {
+    font-size: 16px;
+    margin-bottom: 5%;
+    margin-top: 4%;
+    padding: 0px 20px 0px 0px;
+}
+
+.kolonne_beskrivelse p {
+    font-size: 13px;
+    padding: 0px 20px 0px 0px;
+}
+
+.aroma_anledninger_container{
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+
+.ingredienser {
+    font-size: 20px;
+    margin-top: 4%;
+    top: 120%;
+
+}  
+
+/*-- Beskrivelse af produkter - Grid --*/
+
+.grid_container_ingredienser {
+    grid-template-columns: repeat(5, 1fr);
+    top: 130%;
+}
+
+.grid-tekst_ingredienser {
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+/*--------------*/
+/*-- Opskrift --*/
+/*--------------*/
+
+.overskrift_opskrift {
+    font-size: 34px;
+}
+
+.drinks_navn {
+    width: 25%;
+    font-size: 25px;
+    margin-top: 0%;
+    padding: 5px;
+    margin-left: 270px;
+    margin-bottom: 0px;
+}
+
+.drinks_navn2 {
+    width: 25%;
+    font-size: 25px;
+    margin-top: 0%;
+    padding: 5px;
+    margin-right: 270px;
+    margin-bottom: 0px;
+}
+.container_opskrift1 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 50px;
+    padding: 0px 200px 30px 200px;
+    margin-bottom: 5%;
+    grid-template-areas:
+      "opskrift_billede1 opskrift_billede2";
+  }
+  
+  .opskrift_billede1 { grid-area: opskrift_billede1; }
+  
+  .opskrift_billede2 { grid-area: opskrift_billede2; }
+  
+  .container_opskrift2 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 50px;
+    padding: 0px 200px 30px 200px;
+    grid-template-areas:
+      "opskrift_tekst2 opskrift_billede2";
+  }
+  
+  .opskrift_tekst2 { grid-area: opskrift_tekst2; }
+
+  
+  .opskrift_billede2 { grid-area: opskrift_billede2; }
+  
+  .opskrift_tekst1 { 
+    padding: 30px 10px 10px 30px;
+    margin-bottom: 0px;
+  }
+
+  .opskrift_tekst2 p{
+    font-size: 16px;
+  }
+
+  .opskrift_tekst1 p {
+    font-size: 16px;
+  }
+  
+  .opskrift_tekst2 { 
+    padding: 10px;
+  }
+
+  .vind_billede img {
+    max-width:50%;
+    height: auto;
+    margin: 20px 0px 20px 0px
+  }
+  
+  .vind_tekst h2 {
+    font-family: Obviously;
+    color: #86a880;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 80px;
+  }
+
+  .vind_tekst p {
+    font-size: 18px;
+    padding-right: 400px;
+    line-height: 2;
+    margin-top: 30px;
+  }
+
+/*-----------------*/
+/*-- Forhandlere --*/
+/*-----------------*/
+
+.container_forhandlere {
+    flex-direction: row; 
+}
+
+.row_forhandlere {
+    flex: 1;
+    margin: 0 15px; 
+}
+
+.overskrift_forhandlere {
+    margin-bottom: 30px;
+    font-size: 22px;
+    margin-left: 200px;
+}
+
+.tekst_forhandlere {
+    margin-bottom: 10px;
+    font-size: 16px;
+    margin-left: 200px;
+}
+
+/*----------------------------------------------*/
+/*-- Billede til sider er ikke er programmeret--*/
+/*----------------------------------------------*/
+
+.ombygning_tekst {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .ombygning_tekst1 {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 16px;
+  }
+
+  .ombygning_billede {
+    margin-left: 30%;
+    margin-top: 2%;
+    max-width: 40%;
+  }
+}
+
+
+
+
+
+
